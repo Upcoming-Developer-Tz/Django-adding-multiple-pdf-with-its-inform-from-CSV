@@ -1,0 +1,16 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="book_name">Book Name:</label>
+    <input type="text" name="book_name" id="book_name" required><br><br>
+    
+    <label for="subject_name">Subject:</label>
+    <input type="text" name="subject_name" id="subject_name" required>
+    <br><br>
+    
+    <label for="upload_file">Upload PDF:</label>
+    <input type="file" name="upload_file" id="upload_file" accept="application/pdf"><br><br>
+
+    <button type="submit">Add Book</button>
+
+</form>
+
